@@ -118,7 +118,7 @@ export default {
     locales: ['ja'],
     defaultLocale: 'ja',
   },
-  proxy: ['http://localhost:9000/.netlify'],
+  proxy: { '/.netlify': 'http://localhost:9000' },
   pwa: {
     workbox: {
       offlineAssets: [
